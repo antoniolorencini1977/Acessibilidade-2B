@@ -1,154 +1,71 @@
-/* Reset básico e configurações de acessibilidade */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Segurança Digital para a Terceira Idade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px; /* Fonte maior por padrão */
-  line-height: 1.6;
-  background-color: #f4f6f9;
-  color: #1a1a1a; /* Alto contraste com o fundo */
-  padding-bottom: 40px;
-}
+  <header role="banner">
+    <h1>Segurança na Internet</h1>
+    <p>Guia simples e prático para navegar com tranquilidade</p>
+  </header>
 
-/* Cabeçalho */
-header {
-  background-color: #0d47a1; /* Azul escuro acessível */
-  color: #ffffff;
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 5px solid #ffb300; /* Linha amarela para destaque */
-}
+  <main>
+    <section class="intro">
+      <h2>Bem-vindo(a)!</h2>
+      <p>
+        A internet é um excelente lugar para conversar com a família, ler notícias e fazer compras. 
+        Este portal foi criado para ajudar você a reconhecer perigos comuns e navegar sempre de forma segura.
+      </p>
+    </section>
 
-header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
+    <section class="dicas-grid" aria-label="Dicas de Segurança Digital">
+      
+      <article class="card-dica">
+        <h3>1. Cuidado com Mensagens Suspeitas</h3>
+        <p>
+          Se receber uma mensagem no WhatsApp ou e-mail dizendo que você ganhou um prêmio, ou que sua conta no banco foi bloqueada, desconfie.
+        </p>
+        <div class="alerta-caixa">
+          <strong>Regra de Ouro:</strong> Bancos e empresas sérias não pedem senhas nem dados pessoais por mensagem.
+        </div>
+      </article>
 
-header p {
-  font-size: 1.3rem;
-}
+      <article class="card-dica">
+        <h3>2. Nunca Compartilhe Códigos de Confirmação</h3>
+        <p>
+          Quando tentar acessar algum serviço, você pode receber um código de números por SMS no celular. Esse código é só seu.
+        </p>
+        <div class="alerta-caixa">
+          <strong>Atenção:</strong> Jamais passe esses números para qualquer pessoa que pedir pelo telefone ou WhatsApp.
+        </div>
+      </article>
 
-/* Container principal */
-main {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 0 20px;
-}
+      <article class="card-dica">
+        <h3>3. Crie Senhas Fortes e Anote em Local Seguro</h3>
+        <p>
+          Evite usar datas de aniversário ou sequências simples como "123456". Misture letras e números.
+        </p>
+        <div class="alerta-caixa">
+          <strong>Dica Prática:</strong> É melhor anotar suas senhas em um caderno guardado em casa do que usar a mesma senha simples em tudo.
+        </div>
+      </article>
 
-/* Caixa de introdução */
-.intro {
-  background-color: #ffffff;
-  border: 3px solid #0d47a1;
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 30px;
-}
+    </section>
 
-.intro h2 {
-  color: #0d47a1;
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-}
+    <section class="ajuda-secao">
+      <h2>Ficou com alguma dúvida?</h2>
+      <p>Na dúvida sobre uma mensagem ou ligação, nunca aja com pressa. Peça ajuda a um familiar ou amigo de confiança.</p>
+      <a href="tel:08000000000" class="btn-contato">Ligar para Familiar de Confiança</a>
+    </section>
+  </main>
 
-/* Seção de Dicas (Cartões) */
-.dicas-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
+  <footer>
+    <p>Portal de Acessibilidade e Segurança Digital &copy; 2026</p>
+  </footer>
 
-.card-dica {
-  background-color: #ffffff;
-  border-left: 8px solid #0d47a1;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card-dica h3 {
-  font-size: 1.5rem;
-  color: #0d47a1;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.card-dica p {
-  font-size: 1.15rem;
-  margin-bottom: 15px;
-}
-
-.alerta-caixa {
-  background-color: #fff3cd;
-  border: 2px solid #ffebaba0;
-  color: #856404;
-  padding: 15px;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-/* Seção de Ajuda e Botão de Ação */
-.ajuda-secao {
-  background-color: #e8eaf6;
-  border-radius: 12px;
-  padding: 30px;
-  text-align: center;
-  margin-top: 40px;
-  border: 2px dashed #0d47a1;
-}
-
-.ajuda-secao h2 {
-  color: #0d47a1;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.btn-contato {
-  display: inline-block;
-  background-color: #1b5e20; /* Verde escuro acessível */
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: bold;
-  padding: 18px 32px;
-  text-decoration: none;
-  border-radius: 50px;
-  margin-top: 15px;
-  border: 3px solid #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.btn-contato:focus,
-.btn-contato:hover {
-  background-color: #2e7d32;
-  outline: 4px solid #ffb300; /* Foco visual bem visível */
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  font-size: 1rem;
-  color: #555555;
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 600px) {
-  body {
-    font-size: 18px;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  .btn-contato {
-    width: 100%;
-  }
-}
+</body>
+</html>
