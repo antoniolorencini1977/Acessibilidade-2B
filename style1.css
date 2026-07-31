@@ -1,0 +1,154 @@
+/* Reset básico e configurações de acessibilidade */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; /* Fonte maior por padrão */
+  line-height: 1.6;
+  background-color: #f4f6f9;
+  color: #1a1a1a; /* Alto contraste com o fundo */
+  padding-bottom: 40px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #0d47a1; /* Azul escuro acessível */
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 5px solid #ffb300; /* Linha amarela para destaque */
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3rem;
+}
+
+/* Container principal */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Caixa de introdução */
+.intro {
+  background-color: #ffffff;
+  border: 3px solid #0d47a1;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Seção de Dicas (Cartões) */
+.dicas-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-dica {
+  background-color: #ffffff;
+  border-left: 8px solid #0d47a1;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-dica h3 {
+  font-size: 1.5rem;
+  color: #0d47a1;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-dica p {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.alerta-caixa {
+  background-color: #fff3cd;
+  border: 2px solid #ffeb85;
+  color: #856404;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Seção de Ajuda e Botão de Ação */
+.ajuda-secao {
+  background-color: #e8eaf6;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+  border: 2px dashed #0d47a1;
+}
+
+.ajuda-secao h2 {
+  color: #0d47a1;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.btn-contato {
+  display: inline-block;
+  background-color: #1b5e20; /* Verde escuro acessível */
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 18px 32px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 15px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-contato:focus,
+.btn-contato:hover {
+  background-color: #2e7d32;
+  outline: 4px solid #ffb300; /* Foco visual bem visível */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 1rem;
+  color: #555555;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-contato {
+    width: 100%;
+  }
+}
