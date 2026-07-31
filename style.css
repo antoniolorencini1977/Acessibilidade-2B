@@ -1,3 +1,8 @@
+/* Rolagem suave para ir direto ao item clicado */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset básico e configurações de acessibilidade */
 * {
   box-sizing: border-box;
@@ -30,6 +35,43 @@ header h1 {
 
 header p {
   font-size: 1.3rem;
+}
+
+/* Estilo do Menu de Navegação */
+.menu-navegacao {
+  background-color: #1565c0;
+  padding: 15px 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.menu-navegacao ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu-navegacao a {
+  background-color: #ffffff;
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #ffb300;
+  display: inline-block;
+}
+
+.menu-navegacao a:hover,
+.menu-navegacao a:focus {
+  background-color: #ffb300;
+  color: #0d47a1;
+  outline: 3px solid #ffffff;
 }
 
 /* Container principal */
@@ -67,6 +109,8 @@ main {
   border-radius: 8px;
   padding: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Espaçamento para não cobrir o título ao rolar pelo menu */
+  scroll-margin-top: 90px; 
 }
 
 .card-dica h3 {
@@ -146,6 +190,10 @@ footer {
 
   header h1 {
     font-size: 1.8rem;
+  }
+
+  .menu-navegacao ul {
+    flex-direction: column;
   }
 
   .btn-contato {

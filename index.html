@@ -13,6 +13,15 @@
     <p>Guia simples e prático para navegar com tranquilidade</p>
   </header>
 
+  <!-- Menu de Navegação Acessível -->
+  <nav class="menu-navegacao" aria-label="Navegação rápida">
+    <ul>
+      <li><a href="#dica-1">Dica 1: Mensagens</a></li>
+      <li><a href="#dica-2">Dica 2: Códigos</a></li>
+      <li><a href="#dica-3">Dica 3: Senhas</a></li>
+    </ul>
+  </nav>
+
   <main>
     <section class="intro">
       <h2>Bem-vindo(a)!</h2>
@@ -24,7 +33,7 @@
 
     <section class="dicas-grid" aria-label="Dicas de Segurança Digital">
       
-      <article class="card-dica">
+      <article id="dica-1" class="card-dica">
         <h3>1. Cuidado com Mensagens Suspeitas</h3>
         <p>
           Se receber uma mensagem no WhatsApp ou e-mail dizendo que você ganhou um prêmio, ou que sua conta no banco foi bloqueada, desconfie.
@@ -34,7 +43,7 @@
         </div>
       </article>
 
-      <article class="card-dica">
+      <article id="dica-2" class="card-dica">
         <h3>2. Nunca Compartilhe Códigos de Confirmação</h3>
         <p>
           Quando tentar acessar algum serviço, você pode receber um código de números por SMS no celular. Esse código é só seu.
@@ -44,7 +53,7 @@
         </div>
       </article>
 
-      <article class="card-dica">
+      <article id="dica-3" class="card-dica">
         <h3>3. Crie Senhas Fortes e Anote em Local Seguro</h3>
         <p>
           Evite usar datas de aniversário ou sequências simples como "123456". Misture letras e números.
