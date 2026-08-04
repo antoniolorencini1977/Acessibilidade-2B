@@ -109,7 +109,6 @@ main {
   border-radius: 8px;
   padding: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* Espaçamento para não cobrir o título ao rolar pelo menu */
   scroll-margin-top: 90px; 
 }
 
@@ -127,6 +126,48 @@ main {
   margin-bottom: 15px;
 }
 
+/* ESTILO DO CARTÃO DE DIREITOS NA INTERNET */
+.card-direitos {
+  background-color: #fffde7; /* Amarelo bem suave de fundo */
+  border: 2px dashed #0d47a1;  /* Borda pontilhada azul */
+  border-radius: 12px;
+  padding: 25px;
+  scroll-margin-top: 90px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-direitos h2 {
+  color: #0d47a1;
+  font-size: 1.8rem;
+}
+
+.linha-destaque {
+  border: none;
+  height: 3px;
+  background-color: #ffb300;
+  margin: 10px 0 20px 0;
+}
+
+.lista-direitos {
+  margin: 15px 0 0 20px;
+  list-style-type: disc;
+}
+
+.lista-direitos li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+/* Lista ordenada de passos */
+.lista-passos {
+  margin: 15px 0 20px 25px;
+}
+
+.lista-passos li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
 .alerta-caixa {
   background-color: #fff3cd;
   border: 2px solid #ffeb85;
@@ -135,29 +176,15 @@ main {
   border-radius: 6px;
   font-weight: bold;
   font-size: 1.1rem;
+  margin-top: 15px;
 }
 
-/* Seção de Ajuda e Botão de Ação */
-.ajuda-secao {
-  background-color: #e8eaf6;
-  border-radius: 12px;
-  padding: 30px;
-  text-align: center;
-  margin-top: 40px;
-  border: 2px dashed #0d47a1;
-}
-
-.ajuda-secao h2 {
-  color: #0d47a1;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
+/* Botão de Ação Centralizado */
 .btn-contato {
-  display: block;             /* Torna o link um elemento em bloco */
-  width: fit-content;        /* Ajusta a largura exata do conteúdo */
-  margin: 20px auto;         /* Margem superior/inferior de 20px e ALINHAMENTO CENTRAL na horizontal */
-  background-color: #1b5e20; /* Verde escuro acessível */
+  display: block;
+  width: fit-content;
+  margin: 25px auto;
+  background-color: #1b5e20;
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: bold;
@@ -172,7 +199,7 @@ main {
 .btn-contato:focus,
 .btn-contato:hover {
   background-color: #2e7d32;
-  outline: 4px solid #ffb300; /* Foco visual bem visível */
+  outline: 4px solid #ffb300;
 }
 
 /* Rodapé */
@@ -182,6 +209,10 @@ footer {
   padding: 20px;
   font-size: 1rem;
   color: #555555;
+}
+
+footer p {
+  margin-bottom: 5px;
 }
 
 /* Ajustes para telas menores */
