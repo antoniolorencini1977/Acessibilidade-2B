@@ -1,0 +1,204 @@
+/* Rolagem suave para ir direto ao item clicado */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset básico e configurações de acessibilidade */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; /* Fonte maior por padrão */
+  line-height: 1.6;
+  background-color: #f4f6f9;
+  color: #1a1a1a; /* Alto contraste com o fundo */
+  padding-bottom: 40px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #0d47a1; /* Azul escuro acessível */
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 5px solid #ffb300; /* Linha amarela para destaque */
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3rem;
+}
+
+/* Estilo do Menu de Navegação */
+.menu-navegacao {
+  background-color: #1565c0;
+  padding: 15px 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.menu-navegacao ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu-navegacao a {
+  background-color: #ffffff;
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #ffb300;
+  display: inline-block;
+}
+
+.menu-navegacao a:hover,
+.menu-navegacao a:focus {
+  background-color: #ffb300;
+  color: #0d47a1;
+  outline: 3px solid #ffffff;
+}
+
+/* Container principal */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Caixa de introdução */
+.intro {
+  background-color: #ffffff;
+  border: 3px solid #0d47a1;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Seção de Dicas (Cartões) */
+.dicas-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-dica {
+  background-color: #ffffff;
+  border-left: 8px solid #0d47a1;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Espaçamento para não cobrir o título ao rolar pelo menu */
+  scroll-margin-top: 90px; 
+}
+
+.card-dica h3 {
+  font-size: 1.5rem;
+  color: #0d47a1;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-dica p {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.alerta-caixa {
+  background-color: #fff3cd;
+  border: 2px solid #ffeb85;
+  color: #856404;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Seção de Ajuda e Botão de Ação */
+.ajuda-secao {
+  background-color: #e8eaf6;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+  border: 2px dashed #0d47a1;
+}
+
+.ajuda-secao h2 {
+  color: #0d47a1;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.btn-contato {
+  display: block;             /* Torna o link um elemento em bloco */
+  width: fit-content;        /* Ajusta a largura exata do conteúdo */
+  margin: 20px auto;         /* Margem superior/inferior de 20px e ALINHAMENTO CENTRAL na horizontal */
+  background-color: #1b5e20; /* Verde escuro acessível */
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 18px 32px;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.btn-contato:focus,
+.btn-contato:hover {
+  background-color: #2e7d32;
+  outline: 4px solid #ffb300; /* Foco visual bem visível */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 1rem;
+  color: #555555;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .menu-navegacao ul {
+    flex-direction: column;
+  }
+
+  .btn-contato {
+    width: 100%;
+  }
+}
