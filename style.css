@@ -96,6 +96,39 @@ main {
   font-size: 1.8rem;
 }
 
+/* ESTILO DO CARTÃO DE DIREITOS NA INTERNET */
+.card-direitos {
+  background-color: #fffde7; /* Amarelo bem suave de fundo */
+  border: 2px dashed #0d47a1;  /* Borda pontilhada azul */
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;        /* Espaço antes de começar as dicas */
+  scroll-margin-top: 90px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-direitos h2 {
+  color: #0d47a1;
+  font-size: 1.8rem;
+}
+
+.linha-destaque {
+  border: none;
+  height: 3px;
+  background-color: #ffb300;
+  margin: 10px 0 20px 0;
+}
+
+.lista-direitos {
+  margin: 15px 0 0 20px;
+  list-style-type: disc;
+}
+
+.lista-direitos li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
 /* Seção de Dicas (Cartões) */
 .dicas-grid {
   display: flex;
@@ -124,38 +157,6 @@ main {
 .card-dica p {
   font-size: 1.15rem;
   margin-bottom: 15px;
-}
-
-/* ESTILO DO CARTÃO DE DIREITOS NA INTERNET */
-.card-direitos {
-  background-color: #fffde7; /* Amarelo bem suave de fundo */
-  border: 2px dashed #0d47a1;  /* Borda pontilhada azul */
-  border-radius: 12px;
-  padding: 25px;
-  scroll-margin-top: 90px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.card-direitos h2 {
-  color: #0d47a1;
-  font-size: 1.8rem;
-}
-
-.linha-destaque {
-  border: none;
-  height: 3px;
-  background-color: #ffb300;
-  margin: 10px 0 20px 0;
-}
-
-.lista-direitos {
-  margin: 15px 0 0 20px;
-  list-style-type: disc;
-}
-
-.lista-direitos li {
-  margin-bottom: 12px;
-  font-size: 1.1rem;
 }
 
 /* Lista ordenada de passos */
